@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1730283833 source:c:\users\mr guedou gpas\documents\c++\admini\admin.cpp
+	<iostream>
+	<vector>
+	<string>
+
+1730301514 source:c:\users\mr guedou gpas\documents\c++\admini\main.cpp
+	<iostream>
+	"image.h"
+	"Galerie.h"
+	<iostream>
+	"Galerie.h"
+
+1730297973 c:\users\mr guedou gpas\documents\c++\admini\image.h
+	<iostream>
+
+1730301644 source:c:\users\mr guedou gpas\documents\c++\admini\image.cpp
+	"image.h"
+	<iostream>
+	<string>
+
+1730301914 c:\users\mr guedou gpas\documents\c++\admini\galerie.h
+	<vector>
+	<string>
+	"image.h"
+
