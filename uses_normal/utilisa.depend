@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1730592527 source:c:\utilisa\main.cpp
+	"uses.h"
+	<iostream>
+
+1730592014 source:c:\utilisa\src\uses.cpp
+	"uses.h"
+	<iostream>
+
+1730592247 c:\utilisa\include\uses.h
+	<string>
+
+1730592527 source:c:\uses_normal\main.cpp
+	"uses.h"
+	<iostream>
+
+1730592247 c:\uses_normal\include\uses.h
+	<string>
+
+1730592014 source:c:\uses_normal\src\uses.cpp
+	"uses.h"
+	<iostream>
+
