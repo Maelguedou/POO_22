@@ -2,7 +2,7 @@
 #define CATEGORIE_H
 
 #include <iostream>
-#include <vector>
+#include <list>
 #include "image.h"
 
 using namespace std;
@@ -16,10 +16,24 @@ class Categorie
 
     // Destructeur
     ~Categorie();
-
     // Autres méthodes
-    void Ajouter_Image(const image& img);
-    void Supprimer_Image(const string& nom);
+    void Ajouter_Image(const image& img)
+    {
+        images.push_back(img);
+        cout << "Image ajoutée à la catégorie: " << Nom << endl;
+    }
+    
+    void Supprimer_Image(const string& nom)
+    {
+        for (auto it = images.begin(); it != images.end(); ++it) {
+            if (it->getNom() == nom) {
+                images.erase(it);
+                cout << "Image supprimée: " << nom << endl;
+                return;
+            }
+        }
+    }
+};
 
     // Accesseur
     string getNom() const;
@@ -30,7 +44,6 @@ class Categorie
 
     private:
     string Nom;
-    vector<image> images; // Liste des images dans cette catégorie
-};
+    list<image> images;
 
 #endif // CATEGORIE_H
